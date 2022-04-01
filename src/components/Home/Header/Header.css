@@ -1,0 +1,17 @@
+.portfolio-header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    color: var(--white);
+    overflow: visible;
+    position: relative;
+}
+.logo{
+   font-weight:900;
+    font-size: 40px;   
+}
+.nav-link span:hover{
+    color: var(--dark-orange);
+}
+
+

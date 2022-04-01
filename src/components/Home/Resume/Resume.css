@@ -1,0 +1,222 @@
+.resume-container {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin: 120px 0 ;
+}
+.resume-card {
+    display: flex;
+    height: 360px;
+    width: 1000px;
+}
+.resume-bullets {
+    box-shadow: 15px 0 9px -15px #1f2235;
+    height: 100%;
+    overflow: scroll;
+    width: 280px;
+}
+.bullet-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.bullet-icons {
+    background-color: #1f2235;
+    height: 100%;
+    position: absolute;
+    width: 34px;
+    z-index: 1;
+}
+.bullets {
+    padding-left: 3%;
+    position: relative;
+    width: 86%;
+    z-index: 2;
+}
+.selected-bullet {
+    color: #1f2235;
+    width: 100%;
+}
+.bullet-logo {
+    color: #fff;
+    margin-top: 20px;
+}
+.bullet-label {
+    font-family: Poppins SemiBold;
+    font-size: 14px;
+    margin-left: 5%;
+    white-space: nowrap;
+}
+.resume-bullet-details {
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 0 0 0 80px;
+    width: 600px;
+    
+}
+.resume-details-carousal {
+    transition: -webkit-transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out,-webkit-transform 1s ease-out;
+}
+.bullet-label a {
+    color: #1f2235;
+    text-decoration: none;
+}
+.bullet-label a:hover {
+    background-color: #1f2235;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5%;
+    text-decoration: none;
+}
+.resume-main-heading {
+    color: var(--dark-orange);
+    font-size: 16px;
+    font-weight: 700;
+    
+    
+}
+.resume-sub-heading {
+    color: var(--black);
+    font-family: 'Poppins SemiBold';
+    font-size: 14px;
+    
+}
+.resume-heading, .resume-screen-container {
+    display: flex;
+    flex-direction: column;
+}
+.resume-screen-container {
+    height: 360px;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    padding-top: 130px;
+    width: 100%;
+
+}
+.programming-skills-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-parent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+.heading-bullet {
+    background-color: #ff5823;
+    border-radius: 50%;
+    height: 15px;
+    left: -30px;
+    margin-right: 3%;
+    position: absolute;
+    top: 5px;
+    width: 15px;
+    
+}
+.skill-percentage {
+    background-color: #ff5823;
+    height: 15px;
+    position: relative;
+    width: 50%;
+}
+.active-percentage-bar {
+    background-color: #1f2235;
+    height: 15px;
+    position: absolute;
+    transition: .8s ease;
+    width: 60%;
+}
+.resume-heading-description {
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.resume-heading-description {
+    font-family: Poppins SemiBold;
+}
+
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+}
+@media (max-width: 1110px){
+.resume-bullet-details {
+    padding: 0 0 0 70px;
+}
+}
+@media (max-width: 1023px){
+.resume-bullet-details {
+    height: 360px;
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+}
+
+@media (min-width: 992px){
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+}
+@media (max-width: 850px){
+.resume-container {
+    display: block;
+}
+.resume-screen-container {
+    justify-content: space-evenly;
+}
+.resume-main-heading {
+    display: block;
+}
+}
+
+@media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+}
+@media (min-width: 576px){
+.container, .container-sm {
+    max-width: 540px;
+}
+}
+@media (max-width: 600px){
+.resume-card {
+    flex-direction: column;
+    height: auto;
+}
+.bullet-container{
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.bullet-label{
+    padding-left: 5%;
+}
+.resume-bullet-details{
+    margin: auto;
+    max-width: 100%;
+}
+.heading-bullet span{
+    font-size: 10px;
+}
+
+}
+
+
