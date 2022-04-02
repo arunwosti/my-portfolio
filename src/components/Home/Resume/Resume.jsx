@@ -217,6 +217,19 @@ export default function Resume() {
                 <div class="">
                     <div class="resume-main-heading">
                         <div class="heading-bullet"></div>
+                        <span>NAXA company Website</span>
+                        <div class="heading-date">2022</div>
+                    </div>
+                    <div class="resume-sub-heading">
+                        <span>Technologies Used: React JS, redux-saga, React hooks & SASS</span>
+                    </div>
+                    <div class="resume-heading-description">
+                        <span>Responsive website.<a href="https://arunwosti.github.io/naxa/"> Click here to view</a></span>
+                    </div>
+                    </div>
+                <div class="">
+                    <div class="resume-main-heading">
+                        <div class="heading-bullet"></div>
                         <span>Travel Agency Website</span>
                         <div class="heading-date">2022</div>
                     </div>
