@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Contact.css';
 import img1 from '../../assets/Home/mailz.jpeg';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
+
+    const [dialogue, setDialogue]=useState('')
     function sendEmail(e){
         e.preventDefault();
 
@@ -15,7 +17,7 @@ export default function Contact() {
             
             ).then(res=>{
                 console.log(res);
-                alert('email sent');
+               setDialogue(true)
                 
             }).catch(err => console.log(err));
     }
@@ -49,7 +51,9 @@ export default function Contact() {
         <a href="https://www.facebook.com/awroon.osti.50"><i class="fa fa-facebook-square"></i></a>
         <a href="#"><i class="fa fa-google-plus-square"></i></a>
         <a href="https://www.instagram.com/_awroon/"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-whatsapp"></i></a>
+        <a href='https://www.linkedin.com/in/arun-wosti-893752246/'>
+                        <i className='fab fa-linkedin-in'></i>
+                    </a>
         <a href="#"><i class="fa fa-twitter"></i></a>
     </div>
 <div class="back-form">
@@ -59,11 +63,12 @@ export default function Contact() {
     </div>
     <form onSubmit={sendEmail}>
         <p></p>
-        <label >Name</label><input type="text" name='name'/>
-        <label >Email</label><input type="email" name='email' />
-        <label >Message</label><textarea type="text" name='message'></textarea>
-        
+        <label >Name</label><input type="text" name='name' onChange={(e)=>e.target.value}/>
+        <label >Email</label><input type="email" name='email' onChange={(e)=>e.target.value}/>
+        <label >Message</label><textarea type="text" name='message' onChange={(e)=>e.target.value}></textarea>
+        {dialogue ? <p className='pt-4 '>Message sent.</p> : null}
             <button type="submit" >send<i class="fa fa-paper-plane"></i></button>
+            
         
     </form>
     </div>

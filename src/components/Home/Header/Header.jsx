@@ -23,6 +23,9 @@ export default function Header() {
                             <a className="nav-link text-white" href="#Resumesection" ><span>Resume</span></a>
                             </li>
                             <li className="nav-item">
+                            <a className="nav-link text-white" href='#projects' ><span>Projects</span></a>
+                            </li>
+                            <li className="nav-item">
                             <a className="nav-link text-white" href='#testimonial' ><span>Testimonial</span></a>
                             </li>
                             <li className="nav-item">

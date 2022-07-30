@@ -2,6 +2,8 @@ import React from 'react';
 import Typical from 'react-typical'
 import './Profile.css';
 import './ResponsiveProfile.css';
+import cv from '../../assets/ArunWosti-CV.pdf'
+
 export default function Profile() {
   return (
 
@@ -23,8 +25,8 @@ export default function Profile() {
                     <a href='#'>
                         <i className='fab fa-twitter'></i>
                     </a>
-                    <a href='#'>
-                        <i className='fab fa-whatsapp'></i>
+                    <a href='https://www.linkedin.com/in/arun-wosti-893752246/'>
+                        <i className='fab fa-linkedin-in'></i>
                     </a>
                     </div>
                  </div>
@@ -49,7 +51,7 @@ export default function Profile() {
                                     1000,
                                     "Flutter Developer 📱",
                                     1000,
-                                    "React/ React Native 🌐",
+                                    "React/ NextJS 🌐",
                                     1000,
                                 ]}
                             
@@ -62,12 +64,14 @@ export default function Profile() {
                     </span>    
                 </div>
                 <div className='profile-options'>
-                        <button className='btn primary-btn'>
+                    <a href='#contact'>
+                        <button  className='btn primary-btn'>
                           {" "}
                           Hire Me  
                           {" "}  
                         </button>
-                        <a href='Arun Wosticv.pdf' download=' Arun Wosticv.pdf'>
+                        </a>
+                        <a href={cv} download={cv}>
                            <button className='btn highlighted-btn'>Get Resume</button>
                         </a>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Aboutme.css';
+import cv from '../../assets/ArunWosti-CV.pdf'
 
 export default function Aboutme() {
   return (
@@ -18,7 +19,7 @@ export default function Aboutme() {
           <div className='about-me-profile'></div>
           <div className='about-me-details'>
              <span className='about-me-description'>
-             Front-End web and mobile developer with background knowledge of HTML, CSS, SASS, BOOTSTRAP, React JS & Flutter mobile app developer along with a knack of building applications with utmost efficiency. Strong professional with a BSc willing to be an asset for an organization.
+             Front-End web and mobile developer with background knowledge of HTML, CSS, SASS,Tailwind CSS, BOOTSTRAP, React JS, Next JS & Flutter mobile app developer along with a knack of building applications with utmost efficiency. Strong professional with a BSc willing to be an asset for an organization.
              </span> 
              <div class="about-me-highlights">
                  <div class="highlight-heading">
@@ -34,6 +35,10 @@ export default function Aboutme() {
                                  <span>React JS</span>
                                  </div>
                                  <div class="highlight">
+                                 <div class="highlight-blob"></div>
+                                 <span>Next JS</span>
+                                 </div>
+                                 <div class="highlight">
                                      <div class="highlight-blob"></div>
                                      <span>HTML, CSS and BOOTSTRAP</span>
                                      </div>
@@ -45,8 +50,10 @@ export default function Aboutme() {
                                            </div>
             </div> 
             <div class="about-me-options">
+            <a href='#contact'>
                 <button class="btn primary-btn "> Hire Me </button>
-                <a href="Arun Wosticv.pdf" download="Arun Wosticv.pdf">
+            </a>
+                <a href={cv} download={cv}>
                     <button class="btn highlighted-btn">Get Resume</button>
                     </a>
             </div>

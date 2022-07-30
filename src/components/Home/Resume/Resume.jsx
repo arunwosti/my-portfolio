@@ -1,6 +1,10 @@
 import React from 'react'
 import './Resume.css'
 import '../../ContactMe/Contact.css'
+import webCertificate from '../../../assets/certificates/WebDesign-Certificate.jpg'
+import flutterCertificate from '../../../assets/certificates/flutter-certificate.jpg'
+import javaCertificate from '../../../assets/certificates/java-certificate.jpg'
+import ciscoCertificate from '../../../assets/certificates/Cisco-Certificate.png'
 
 export default function Resume() {
   return (
@@ -39,10 +43,10 @@ export default function Resume() {
                     <i class="bullet-logo fas fa-laptop-code"></i>
                     <span class="bullet-label"><a href="#pskills">Programming Skills</a></span>
                 </div>
-                <div class="bullet">
+                {/* <div class="bullet">
                     <i class="bullet-logo fas fa-chart-line"></i>
                     <span class="bullet-label"><a href="#projects">Projects</a></span>
-                </div>
+                </div> */}
                 <div class="bullet">
                     <i class="bullet-logo fas fa-palette"></i>
                     <span class="bullet-label"><a href="#interests">Interests</a></span>
@@ -93,17 +97,40 @@ export default function Resume() {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="resume-screen-container" id="work">
+                                <div class="resume-screen-container customPadding" id="work">
                                     <div class="experience-container">
+                                    <div class="resume-heading">
+                                    <div class="resume-main-heading">
+                                        <div class="heading-bullet"></div>
+                                        <span>Naxa Pvt. Ltd</span>
+                                    <div class="heading-date">May 2020 – 22nd July 2022</div>
+                                    </div>
+                                    <div class="resume-sub-heading"><span>Frontend Developer</span></div>
+                                    
+                                    <div class="experience-description">
+                                    <span class="resume-description-text">-Worked as a frontend developer where i had to create dynamic and responsive websites.</span>
+                                </div>
+                                </div>
+                                
+                                <div class="resume-heading">
+                                    <div class="resume-main-heading">
+                                        <div class="heading-bullet"></div>
+                                        <span>Yug Shanti Saving &amp; Credit Co-operative Ltd</span>
+                                    <div class="heading-date">Dec 2019 – May 2020</div>
+                                    </div>
+                                    <div class="resume-sub-heading"><span>Teller</span></div>
+                                    <div class="experience-description">
+                                    <span class="resume-description-text">-Worked as a teller in financial institution where i had to record all the day-to-day financial transactions.</span>
+                                </div>
+                                </div>
+                                
                                         <div class="resume-heading">
                                             <div class="resume-main-heading">
                                                 <div class="heading-bullet"></div>
                                                 <span>Headway Education Foundation</span>
-                                                <div class="heading-date">2019-2020</div>
+                                                <div class="heading-date">Aug 2018 - Nov 2019</div>
                                             </div>
                                 <div class="resume-sub-heading"><span>Documentation Officer</span></div>
-                                <div class="resume-heading-description"><span></span></div>
-                                </div>
                                 <div class="experience-description">
                                     <span class="resume-description-text">-Worked as documentation officer where I had to managed all the paper works in the office system.</span>
                                     </div>
@@ -112,17 +139,10 @@ export default function Resume() {
                                     <span class="resume-description-text">  </span><br/>
                                     <span class="resume-description-text"></span><br/>
                                 </div>
-                                <div class="resume-heading">
-                                    <div class="resume-main-heading">
-                                        <div class="heading-bullet"></div>
-                                        <span>Yug Shanti Saving &amp; Credit Co-operative Ltd</span>
-                                    <div class="heading-date">2020-2021</div>
-                                    </div>
-                                    <div class="resume-sub-heading"><span>Teller</span></div>
-                                    <div class="resume-heading-description"><span></span></div>
                                 </div>
-                                <div class="experience-description">
-                                    <span class="resume-description-text">-Worked as a teller in financial institution where i had to record all the day-to-day financial transactions.</span></div>
+                                
+                                
+                                
                                 </div>
                                 </div>
                                 <div class="resume-screen-container programming-skills-container" id="pskills">
@@ -136,6 +156,13 @@ export default function Resume() {
                                     <div class="skill-parent">
                                         <div class="heading-bullet"></div
                                         ><span>React JS</span>
+                                    <div class="skill-percentage">
+                                        <div class="active-percentage-bar"></div>
+                                    </div>
+                                    </div>
+                                    <div class="skill-parent">
+                                        <div class="heading-bullet"></div
+                                        ><span>Next JS</span>
                                     <div class="skill-percentage">
                                         <div class="active-percentage-bar"></div>
                                     </div>
@@ -155,6 +182,13 @@ export default function Resume() {
                                     </div>
                                     </div>
                                     <div class="skill-parent">
+                                        <div class="heading-bullet"></div
+                                        ><span>Flutter</span>
+                                    <div class="skill-percentage">
+                                        <div class="active-percentage-bar"></div>
+                                    </div>
+                                    </div>
+                                    <div class="skill-parent">
                                         <div class="heading-bullet"></div>
                                         <span>HTML</span>
                                     <div class="skill-percentage">
@@ -163,7 +197,7 @@ export default function Resume() {
                  </div>
                  <div class="skill-parent">
                  <div class="heading-bullet"></div>
-                 <span>CSS</span>
+                 <span>CSS, Tailwind CSS</span>
                  <div class="skill-percentage">
                      <div class="active-percentage-bar"></div>
                 </div>
@@ -176,7 +210,7 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
-            <div class="resume-screen-container" id="projects">
+            {/* <div class="resume-screen-container" id="projects">
                 <div class="resume-main-heading">
                     <div class="heading-bullet"></div>
                     <span>Clothing Ecommerce Website</span>
@@ -189,18 +223,6 @@ export default function Resume() {
                     <div class="resume-heading-description">
                         <span><a href="https://arun-clothing-ecommerce.herokuapp.com/">Click here to view</a></span>
                     </div>
-                    <div class="">
-                <div class="resume-main-heading">
-                    <div class="heading-bullet"></div>
-                    <span>CVWN NGO Website</span>
-                    <div class="heading-date">2022</div>
-                    </div><div class="resume-sub-heading">
-                        <span>Technologies Used: React JS</span>
-                    </div>
-                <div class="resume-heading-description">
-                    <span>Responsive website for CVWN.<a href="https://cvwn.logindesigns.com/">Click here to view</a></span>
-                </div>
-                </div>
             <div class="">
                 <div class="resume-main-heading">
                     <div class="heading-bullet"></div>
@@ -229,19 +251,6 @@ export default function Resume() {
                 <div class="">
                     <div class="resume-main-heading">
                         <div class="heading-bullet"></div>
-                        <span>NAXA company Website</span>
-                        <div class="heading-date">2022</div>
-                    </div>
-                    <div class="resume-sub-heading">
-                        <span>Technologies Used: React JS, redux-saga, React hooks & SASS</span>
-                    </div>
-                    <div class="resume-heading-description">
-                        <span>Responsive website.<a href="https://arunwosti.github.io/naxa/"> Click here to view</a></span>
-                    </div>
-                    </div>
-                <div class="">
-                    <div class="resume-main-heading">
-                        <div class="heading-bullet"></div>
                         <span>Travel Agency Website</span>
                         <div class="heading-date">2022</div>
                     </div>
@@ -250,6 +259,19 @@ export default function Resume() {
                     </div>
                     <div class="resume-heading-description">
                         <span>Responsive website for NGO.<a href="https://arunwosti.github.io/Travel_website/#home"> Click here to view</a></span>
+                    </div>
+                    </div>
+                    <div class="">
+                    <div class="resume-main-heading">
+                        <div class="heading-bullet"></div>
+                        <span>NAXA company Website</span>
+                        <div class="heading-date">2022</div>
+                    </div>
+                    <div class="resume-sub-heading">
+                        <span>Technologies Used: React JS, redux-saga, React hooks & SASS</span>
+                    </div>
+                    <div class="resume-heading-description">
+                        <span>Responsive website.<a href="https://arunwosti.github.io/naxa/"> Click here to view</a></span>
                     </div>
                     </div>
                     <div class="">
@@ -265,7 +287,7 @@ export default function Resume() {
                                 <span>Responsive e-commerce website.<a href="https://arunwosti.github.io/Akira-Ecommerce/"> Click here to view</a></span>
                             </div>
                             </div>
-                            </div>
+                            </div> */}
                             <div class="resume-screen-container" id="interests">
                                 <div class="resume-heading">
                                     <div class="resume-main-heading">
@@ -303,7 +325,7 @@ export default function Resume() {
                         </div>
                         </div>
                         </div>
-                        <div class="resume-screen-container" id="certificates">
+                        <div class="resume-screen-container certificatePadding" id="certificates">
                             <div class="experience-container">
                                 <div class="resume-heading">
                                     <div class="resume-main-heading">
@@ -315,7 +337,7 @@ export default function Resume() {
                             <span>Broadway Infosys</span>
                         </div>
                         <div class="resume-heading-description">
-                            <span><a href="WebDesign-Certificate.jpg"> Certificate</a></span>
+                            <span><a href={webCertificate}> Certificate</a></span>
                         </div>
                         </div>
                         <div class="resume-heading pt-2">
@@ -328,7 +350,7 @@ export default function Resume() {
                                 <span> Cisco Networking Academy</span>
                             </div>
                             <div class="resume-heading-description">
-                                <span><a href="Cisco-Certificate.png"> Certificate</a></span>
+                                <span><a href={ciscoCertificate}> Certificate</a></span>
                             </div>
                             </div>
                             <div class="resume-heading pt-2">
@@ -341,7 +363,7 @@ export default function Resume() {
                                         <span> Broadway Infosys</span>
                                     </div>
                             <div class="resume-heading-description">
-                                <span><a href="#"> Certificate</a></span>
+                                <span><a href={flutterCertificate}> Certificate</a></span>
                             </div>
                         </div>
                         <div class="resume-heading pt-2">
@@ -354,16 +376,17 @@ export default function Resume() {
                             <span> Broadway Infosys</span>
                         </div>
                         <div class="resume-heading-description">
-                            <span><a href="#"> Certificate</a></span>
+                            <span><a href={javaCertificate}> Certificate</a></span>
                         </div>
                         </div>
                         </div>
                         </div>
                         </div>
                  </div>
+                 </div>
         </div>
-        </div>
-    </div>
+          </div> 
+   
   )};
 
 

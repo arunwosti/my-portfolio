@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: "Poppins Medium";
   font-style: normal;
@@ -114,9 +117,14 @@ body ::-webkit-scrollbar-thumb {
 
 .highlighted-btn {
   color: var(--white);
-
+border: none;
   font-size: 12px;
   background-color: #ff5823;
+}
+.highlighted-btn:hover {
+  color: #1f2235;
+  border: 2px solid #ff5823;
+  background-color: cornsilk;
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {

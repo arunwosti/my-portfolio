@@ -5,6 +5,7 @@ import Contact from './components/ContactMe/Contact';
 import Aboutme from './components/AboutMe/Aboutme';
 import Resume from './components/Home/Resume/Resume';
 import Testimonial from './components/Testimonial/Testimonial';
+import ProjectSection from './components/Projects';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Home/>
       <Aboutme/>
       <Resume/>
-      <Testimonial/>
+      <ProjectSection/>
+      {/* <Testimonial/> */}
       <Contact/>
     </div>
   );
